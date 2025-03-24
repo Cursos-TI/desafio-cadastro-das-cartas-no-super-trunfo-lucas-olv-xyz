@@ -1,6 +1,14 @@
 #include <stdio.h>
 #include <string.h>
 
+/*--------DESAFIO 2 - CARTAS SUPER TRUNFO----------------
+calcular a densidade populacional de cada cidade
+- densidade populacional = populacao / area
+calcular o pib per capita de cada cidade
+- pib per capita = pib / populacao
+exibir os resultados    
+*/
+
 int main() {
     char estado1[50], estado2[50],nome_cidade1[50], nome_cidade2[50], codigo1[50], codigo2[50];
     int pop1, pop2, area1, area2, pontos_tur1, pontos_tur2;
@@ -29,6 +37,8 @@ int main() {
     //num pontos tur
     printf("Digite o numero de pontos turisticos da primeira carta: ");
     scanf("%d", &pontos_tur1);
+    int densidade_pop1 = pop1 / area_km1;
+    float pib_per_capita1 = pib1 / pop1;
 
 
     //--------------------dados da segunda carta----------------------
@@ -66,6 +76,9 @@ int main() {
     printf("Area: %.2f km\n", area_km1);
     printf("PIB: %.2f bilhoes de reais\n", pib1);
     printf("Pontos turisticos: %d\n", pontos_tur1);
+    printf("Densidade populacional: %d\n", densidade_pop1);
+    printf("PIB per capita: %.2f\n", pib_per_capita1);
+
     printf("---------------------------------------------------------\n");
     printf("Carta 2:");
     printf("Estado: %s\n", estado2);
