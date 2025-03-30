@@ -78,7 +78,6 @@ int main() {
     //------------------COMPARANDO AS CARTAS----------------------
     //vou escolher populacao como o atributo a ser comparado
     printf("-------COMPARANDO AS CARTAS (atributo: populacao)-------\n");
-    //pop
     printf("Carta 1 - %s (%s): %.1f milhoes\n", nome_cidade1, codigo1, pop1 / 1000000.0);
     printf("Carta 2 - %s (%s): %.1f milhoes\n", nome_cidade2, codigo2, pop2 / 1000000.0);
     
